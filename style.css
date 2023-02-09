@@ -1,0 +1,115 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  margin:0 2rem;
+  color: #000000;
+  background-color: #e2dede;
+  /* background-color: #60b347; */
+}
+
+/* LAYOUT */
+header {
+  position: relative;
+
+  /* border-bottom: 7px solid #eee; */
+}
+.footer{
+ text-align: center;
+ font-size: 1.6rem;
+ background-color: #000000;
+ 
+ color: #ffffff;
+}
+.taxheader{
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 1rem 1rem ;
+   border-bottom: 7px solid #000000; 
+}
+.main{
+  font-size: 2rem;
+ 
+
+}
+.first-position{
+  border: 1px solid black;
+}
+.passthree{
+  border: 1px solid black;
+}
+.failthree{
+  border: 1px solid black;
+}
+.color{
+  font-size: 2.5rem;
+}
+.color-head{
+  color: rgb(255, 255, 255);
+ font-size: 2.5rem;
+  text-align: center;
+  background-color: #000000;
+  margin: 1rem;
+  
+}
+.btn{
+  padding: 1rem 2rem ;
+  font-size: 2rem;
+  margin: 1rem;
+  border: 1px solid white;
+  background-color: #3e3e3e;
+  color: #ffffff;
+  border-radius: 100px;
+}
+.btn:active{
+  transform: translateY(.4rem);
+}
+.btn-see{
+
+
+}
+.btn-add{
+  border-bottom: 7px solid #eee;
+}
+.btn-main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+
+}
+.form-input{
+  width: 22%;
+  margin-left: 3rem;
+  padding: 1rem;
+  border: 1px solid white;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+/* .radio-css{
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-left: 5rem;
+} */
+.radio-main{
+display: flex;
+align-items: center;
+margin-left: 4rem;
+font-size: 1.6rem;
+font-weight: 600;
+}
+
+

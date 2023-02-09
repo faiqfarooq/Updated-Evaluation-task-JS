@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <title>Evaluation Task</title>
+  </head>
+  <body>
+    <header class="header" class="logodiv">
+     
+      <h1 class="taxheader">Student Result Information</h1>
+    </header>
+    <main>
+      <!-- --------------start of input------------- -->
+      <div style="width:100%; ">
+        <input type="number" placeholder="Enter Roll number" class="stdId form-input" id="stdId">
+        <input type="text" placeholder="Enter Name" class="stdName form-input" id="stdName">
+        <input type="number" placeholder="marks Obtained" class="marksObtain form-input" id="marksObtain">
+        <input type="number" placeholder="total number" class="totalMarks form-input" disabled value="1000" id="totalMarks">
+    
+
+      </div>
+      <div class="radio-main">
+        <input type="radio" id="pass" class="input-form radio-css"   name="passfail" value="PASS"  required onchange="genderselect()" > 
+      <label for="pass">PASS</label>
+      <input type="radio" id="fail" class="input-form radio-css"  name="passfail" value="FAIL" required onchange="genderselect()">
+      <label for="fail">FAIL</label>
+      </div>
+      
+
+
+      <div class="btn-add">
+        <button class="btn " onclick="loadData(), loadOther()" >Add student result</button>
+      </div>
+     
+      <div class="btn-main" style="margin-bottom: 3rem;">
+       
+        <button onclick="loadOther()" class="btn btn-see">See Data</button>
+      </div>
+    
+
+
+
+
+
+
+
+
+      <!-------------------- End of input------------ -->
+     <div  class="main">
+      <div>
+        <table style="width:100%;">
+        <tr style=" border:1px solid black;">
+          <th style="width:10%; border:1px solid black;">ID</th>
+          <th style="width:30%; border:1px solid black;">Name</th>
+          <th style="width:20%; border:1px solid black;">Marks Obtain</th>
+          <th style="width:20%; border:1px solid black;">Total Marks</th>
+          <th style="width:20%; border:1px solid black;">Status</th>
+          </tr>
+        </table>
+        <!-- <p class="color-head"> Top  Position</p> -->
+        <!-- <p class="color-head topper-table" > 
+        
+        </p> -->
+        <!-- <div class="first-position" id="first-position">
+         
+                </div> -->
+      </div>
+      <div >
+        <p class="color-head"> Top three achievers</p>
+       
+        <div class="passthree" id="passthree">
+         
+                </div>
+      </div>
+      <div>
+        <p class="color-head"> 3 lowest marks achievers</p>
+        <div class="failthree" id="failthree">
+         
+                </div>
+      </div>
+      <div>
+        <p class="color-head"> Student Pass the Exam</p>
+        <div class="displayall" id="displayall">
+         
+                </div>
+      </div>
+      <div>
+        <p class="color-head"> All students with status pass</p>
+        <div class="displayallpass" id="displayallpass">
+         
+                </div>
+      </div>
+     </div>
+     
+   
+     
+    </main>
+    <footer class="footer"><footer>&copy; Copyright 2023
+    Faiq Farooq</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
